@@ -7,6 +7,43 @@
     <link rel="stylesheet" href="styleLogin.css" />
   </head>
   <body>
+
+    <div id="popup-overlay">
+      <div class="popup">
+        <h2>📢 Informasi Website</h2>
+
+        <p>
+          Website ini merupakan <strong>landing page (frontend)</strong> yang dibuat
+          untuk keperluan demonstrasi tampilan kepada pengguna.
+        </p>
+
+        <p>
+          Fitur backend, dashboard admin, serta beberapa halaman lainnya tidak
+          ditampilkan pada versi ini karena merupakan bagian dari
+          <strong>private project</strong>.
+        </p>
+
+        <p>
+          Saat ini website masih dioptimalkan untuk tampilan
+          <strong>desktop/laptop</strong>. Dukungan untuk perangkat mobile seperti
+          Android dan iOS masih dalam tahap pengembangan.
+        </p>
+
+        <p>
+          Apabila Anda ingin melihat implementasi lengkap beserta tampilan halaman
+          admin dan user, silakan menghubungi saya melalui:
+        </p>
+
+        <a href="https://vyyy.my.id" target="_blank" class="popup-link">
+          vyyy.my.id
+        </a>
+
+        <button id="close-popup">
+          Lanjutkan ke Website
+        </button>
+      </div>
+    </div>
+    
     <div class="login">
       <nav>
         <img src="img/logo/Best Cell Logo.svg" alt="" />
@@ -57,4 +94,12 @@
       </footer>
     </div>
   </body>
+
+  <script>
+    document
+      .getElementById("close-popup")
+      .addEventListener("click", function () {
+        document.getElementById("popup-overlay").style.display = "none";
+      });
+  </script>
 </html>

@@ -9,6 +9,70 @@ body {
   background-color: #fff;
 }
 
+#popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup {
+  width: 90%;
+  max-width: 500px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,.2);
+}
+
+.popup h2 {
+  color: #024c8f;
+  margin-bottom: 20px;
+}
+
+.popup p {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.popup a {
+  color: #024c8f;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#close-popup {
+  background: #024c8f;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#close-popup:hover {
+  background: #013766;
+}
+
+.popup-link {
+  display: block !important;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 18px;
+  color: #024c8f;
+  font-weight: 600;
+}
+
 .login {
   display: flex;
   flex-direction: column;

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Users</title>
+    <link rel="stylesheet" href="styleAdminUsers.css" />
+  </head>
+  <body>
+    <nav class="sidebar" id="sidebar">
+      <div class="logo">
+        <img src="img/logo/Best Cell Logo.svg" alt="Logo" class="logo-img" />
+        <h1>BestCell Store</h1>
+      </div>
+      <ul class="menu">
+        <li class="menu-item">
+          <span>
+            <img src="img/DashboardHomePage.svg" alt="Dashboard Icon" />
+            Dashboard
+          </span>
+          <ul class="submenu">
+            <li>
+              <a href="dashboardAnalytics.html">→ &nbsp;&nbsp;Analytics</a>
+            </li>
+            <li><a href="#">→ &nbsp;&nbsp;E-Commerce</a></li>
+            <li><a href="#">→ &nbsp;&nbsp;CRM</a></li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <span class="active">
+            <img src="img/Pages.svg" alt="Pages Icon" />
+            Pages
+          </span>
+          <ul class="submenu">
+            <li>
+              <a href="pagesUsers.html" class="active">→ &nbsp;&nbsp;Users</a>
+            </li>
+            <li><a href="#">→ &nbsp;&nbsp;Orders</a></li>
+            <li><a href="#">→ &nbsp;&nbsp;Produk</a></li>
+            <li><a href="#">→ &nbsp;&nbsp;Reports</a></li>
+            <li><a href="#">→ &nbsp;&nbsp;Setting</a></li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <span>
+            <img src="img/Profile.svg" alt="Profile Icon" />
+            Profile
+          </span>
+        </li>
+        <li class="menu-item">
+          <span>
+            <img src="img/Logout.svg" alt="Logout Icon" />
+            Logout
+          </span>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <nav class="navbar">
+        <div class="navbar-left">
+          <a class="sidebar-toggle" href="#">
+            <img class="hamburger" src="img/Menu.svg" alt="Toggle Sidebar" />
+          </a>
+          <form class="search">
+            <input type="text" placeholder="Search..." />
+            <button type="submit">
+              <img src="img/Search.svg" alt="Search Icon" />
+            </button>
+          </form>
+        </div>
+        <div class="navbar-right">
+          <div class="profile-dropdown">
+            <img src="img/user.svg" alt="Profile Picture" class="profile-pic" />
+            <div class="dropdown-menu">
+              <a href="#">My Profile</a>
+              <a href="#">Settings</a>
+              <a href="#">Logout</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="users-pages">
+        <h1>Users <span>Pages</span></h1>
+        <div class="users-container">
+          <div class="panel-users">
+            <h3>Users</h3>
+            <div class="users-tabel"></div>
+          </div>
+          <div class="panel-info">
+            <h3>Nama Users</h3>
+            <div class="users-info"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="scriptPagesUsers.js"></script>
+</html>

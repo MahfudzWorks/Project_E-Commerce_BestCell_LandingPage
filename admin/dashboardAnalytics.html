@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Analytics</title>
+    <link rel="stylesheet" href="styleAdminDashboardAnalytics.css" />
+  </head>
+  <body>
+    <nav class="sidebar" id="sidebar">
+      <div class="logo">
+        <img src="img/logo/Best Cell Logo.svg" alt="Logo" class="logo-img" />
+        <h1>BestCell Store</h1>
+      </div>
+      <ul class="menu">
+        <li class="menu-item">
+          <span class="active">
+            <img src="img/DashboardHomePage.svg" alt="Dashboard Icon" />
+            Dashboard
+          </span>
+          <ul class="submenu">
+            <li>
+              <a href="dashboardAnalytics.html" class="active"
+                >→ &nbsp;&nbsp;Analytics</a
+              >
+            </li>
+            <li><a href="#">→ &nbsp;&nbsp;E-Commerce</a></li>
+            <li><a href="#">→ &nbsp;&nbsp;CRM</a></li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <span>
+            <img src="img/Pages.svg" alt="Pages Icon" />
+            Pages
+          </span>
+          <ul class="submenu">
+            <li><a href="pagesUsers.html">→ &nbsp;&nbsp;Users</a></li>
+            <li><a href="#">→ &nbsp;&nbsp;Orders</a></li>
+            <li><a href="#">→ &nbsp;&nbsp;Produk</a></li>
+            <li><a href="#">→ &nbsp;&nbsp;Reports</a></li>
+            <li><a href="#">→ &nbsp;&nbsp;Setting</a></li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <span>
+            <img src="img/Profile.svg" alt="Profile Icon" />
+            Profile
+          </span>
+        </li>
+        <li class="menu-item">
+          <span>
+            <img src="img/Logout.svg" alt="Logout Icon" />
+            Logout
+          </span>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <nav class="navbar">
+        <div class="navbar-left">
+          <a class="sidebar-toggle" href="#">
+            <img class="hamburger" src="img/Menu.svg" alt="Toggle Sidebar" />
+          </a>
+          <form class="search">
+            <input type="text" placeholder="Search..." />
+            <button type="submit">
+              <img src="img/Search.svg" alt="Search Icon" />
+            </button>
+          </form>
+        </div>
+        <div class="navbar-right">
+          <div class="profile-dropdown">
+            <img src="img/user.svg" alt="Profile Picture" class="profile-pic" />
+            <div class="dropdown-menu">
+              <a href="#">My Profile</a>
+              <a href="#">Settings</a>
+              <a href="#">Logout</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="analytics-dashboard">
+        <h1>Analytics <span>Dashboard</span></h1>
+        <div class="analytics-container">
+          <div class="panel-info">
+            <div class="penjualan">
+              <h3>Penjualan</h3>
+              <div class="total"></div>
+            </div>
+            <div class="pendapatan">
+              <h3>Pendapatan</h3>
+              <div class="total"></div>
+            </div>
+            <div class="pengunjung">
+              <h3>Pengunjung</h3>
+              <div class="total"></div>
+            </div>
+            <div class="pesanan">
+              <h3>Pesanan</h3>
+              <div class="total"></div>
+            </div>
+          </div>
+          <div class="panel-grafik">
+            <h3>Penjualan Terkini</h3>
+            <div class="penjualan-terkini">
+              <div class="grafik-penjualan"></div>
+            </div>
+          </div>
+          <div class="panel-browser">
+            <h3>Browser</h3>
+            <div class="penjualan-terkini">
+              <div class="grafik-penjualan"></div>
+            </div>
+          </div>
+          <div class="panel-kalender">
+            <h3>Kalender</h3>
+            <div class="penjualan-terkini">
+              <div class="grafik-penjualan"></div>
+            </div>
+          </div>
+        </div>
+        <div class="panel-penjualan-akhir">
+          <h3>Penjualan Terakhir</h3>
+          <div class="penjualan-terkini">
+            <div class="grafik-penjualan"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="scriptDashboardAdmin.js"></script>
+</html>

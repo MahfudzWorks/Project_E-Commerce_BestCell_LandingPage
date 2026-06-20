@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #fff;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  min-height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+nav img {
+  width: 55px;
+  height: 60px;
+  margin-top: 20px;
+}
+
+.loginContainer {
+  display: flex;
+  width: 95%;
+  height: 520px;
+  overflow: hidden;
+}
+
+.leftPanel {
+  flex: 1;
+  background-color: #fff;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.leftPanel img.mainLogo {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.leftPanel h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.leftPanel p {
+  font-size: 14px;
+  color: #555;
+}
+
+.rightPanel {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.loginPanel {
+  width: 430px;
+  padding: 30px 40px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.loginPanel h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.loginPanel p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.loginPanel a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.loginPanel a:hover {
+  text-decoration: underline;
+}
+
+.loginGoogle {
+  margin-bottom: 20px;
+}
+
+.loginGoogle a {
+  display: flex;
+  height: 45px;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  color: #555;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.loginGoogle img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form input {
+  padding: 10px;
+  height: 45px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+form a {
+  font-size: 12px;
+  align-self: center;
+  color: #007bff;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+form a:hover {
+  text-decoration: underline;
+}
+
+form button {
+  padding: 10px;
+  height: 45px;
+  background-color: #0056b3;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+form button:hover {
+  background-color: #004399;
+}
+
+footer {
+  margin-top: auto;
+  padding: 10px;
+  font-size: 12px;
+  color: #555;
+  text-align: center;
+  background-color: #f9f9f9;
+  width: 100%;
+}
+
+footer a {
+  color: #007bff;
+  text-decoration: none;
+}

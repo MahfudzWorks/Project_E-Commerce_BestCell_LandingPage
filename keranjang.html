@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keranjang</title>
+    <link rel="stylesheet" href="styleKeranjang.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <div class="logo">
+          <img src="img/logo/Best Cell Logo.svg" alt="Logo" />
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="#kategori">Kategori<span class="arrow">&#9662;</span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#handphone">Handphone</a></li>
+                <li><a href="#tablet">Tablet</a></li>
+                <li><a href="#smartwatch">Smartwatch</a></li>
+                <li><a href="#handsfree">Handsfree</a></li>
+                <li><a href="#laptop">Laptop</a></li>
+              </ul>
+            </li>
+            <li><a href="#artikel">Artikel</a></li>
+            <li><a href="#hotPromo">Hot Promo</a></li>
+            <li><a href="/lokasi.html">Lokasi Toko</a></li>
+            <li><a href="/tentangkami.html">Tentang Kami</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="nav-right">
+        <div class="icon-menu">
+          <a href=""><img src="img/icon/navbar/Search.svg" alt="" /></a>
+          <a href="/keranjang.html"
+            ><img src="img/icon/navbar/Shopping Cart.svg" alt=""
+          /></a>
+          <a href=""><img src="img/icon/navbar/User.svg" alt="" /></a>
+        </div>
+      </div>
+      <div class="hamberger-menu" onclick="toogleMenu()">
+        <img src="img/icon/navbar/Menu.svg" alt="Menu" />
+      </div>
+    </nav>
+    <main>
+      <div class="keranjang-container">
+        <div class="progress-bar">
+          <div class="step active">
+            <h1>1</h1>
+            <h3>Keranjang Belanja</h3>
+          </div>
+          <div class="step">
+            <h1>2</h1>
+            <h3>Chekckout</h3>
+          </div>
+          <div class="step">
+            <h1>3</h1>
+            <h3>Ulasan</h3>
+          </div>
+        </div>
+        <div class="keranjang">
+          <div class="left">
+            <div class="keranjang-header">
+              <div class="pilih-item">
+                <input type="checkbox" id="pilih-all" />
+                <label for="pilih-all">Semua</label>
+              </div>
+              <button class="hapus-btn">Hapus</button>
+            </div>
+            <div class="keranjang-item">
+              <div class="keranjang-item-info">
+                <input type="checkbox" />
+                <img
+                  src="img/gambar/Produk/handphone/Iphone-13-test.svg"
+                  alt="iPhone 13"
+                />
+                <div>
+                  <h4>iPhone 13 128GB Garansi Resmi – Starlight</h4>
+                  <p>
+                    <span class="harga-original">Rp15.499.000</span>
+                    <span class="harga-diskon">Rp9.999.000</span>
+                  </p>
+                </div>
+              </div>
+              <div class="keranjang-item-action">
+                <div class="jumlah">
+                  <button class="btn-decrement">-</button>
+                  <input
+                    type="number"
+                    value="1"
+                    min="1"
+                    class="input-quantity"
+                  />
+                  <button class="btn-increment">+</button>
+                </div>
+                <button class="hapus-btn">🗑️</button>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <div class="keranjang-total">
+              <p>Subtotal: <span>Rp9.999.000</span></p>
+              <button class="voucher-btn">Gunakan Voucher</button>
+              <button class="checkout-btn">Checkout</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="rekomendasi-produk"></div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-logo">
+        <img src="img/logo/Best Cell Store 2.svg" alt="Best Cell Store Logo" />
+      </div>
+      <div class="footer-links">
+        <div class="footer-column">
+          <h3>Informasi Link</h3>
+          <ul>
+            <li><a href="#tentang-kami">Tentang Kami</a></li>
+            <li><a href="#lokasi-toko">Lokasi Toko Kami</a></li>
+            <li><a href="#promo-terbaru">Promo Terbaru</a></li>
+            <li><a href="#artikel">Artikel</a></li>
+            <li><a href="#privasi">Kebijakan Privasi</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Media Sosial Kami</h3>
+          <ul>
+            <li>
+              <a href="#instagram"
+                ><img src="img/icon/footer/Instagram.svg" alt="" />Instagram</a
+              >
+            </li>
+            <li>
+              <a href="#facebook"
+                ><img src="img/icon/footer/Facebook.svg" alt="" />Facebook</a
+              >
+            </li>
+            <li>
+              <a href="#whatsapp"
+                ><img src="img/icon/footer/WhatsApp.svg" alt="" />Whatsapp</a
+              >
+            </li>
+            <li>
+              <a href="#telegram"
+                ><img src="img/icon/footer/Telegram.svg" alt="" />Telegram</a
+              >
+            </li>
+            <li>
+              <a href="#youtube"
+                ><img src="img/icon/footer/YouTube.svg" alt="" />Youtube</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Pilihan Pembayaran</h3>
+          <div class="payment-icons">
+            <img src="img/icon/footer/Pembayaran.svg" alt="Akulaku" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
